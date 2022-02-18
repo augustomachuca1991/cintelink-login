@@ -1,33 +1,41 @@
 <template>
-	<HomeLogin img="./img/logo.png" />
+  <HomeLogin img="./img/logo.png" />
 </template>
 
 <script>
-	import HomeLogin from './components/HomeLogin.vue';
+import HomeLogin from "./components/HomeLogin.vue";
 
-	export default {
-		name: 'App',
-		components: {
-			HomeLogin,
-		},
-	};
+export default {
+  name: "App",
+  components: {
+    HomeLogin,
+  },
+};
 </script>
 
 <style>
-	body {
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-		background-image: url('./img/fondo.jpg');
-		background-repeat: no-repeat;
-		background-position: center top;
-		background-size: 100% 100vh;
-	}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-	#app {
-		font-family: Avenir, Helvetica, Arial, sans-serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		text-align: center;
-	}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
 </style>
