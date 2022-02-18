@@ -1,20 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HomeLogin img="./img/logo.png" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeLogin from "./components/HomeLogin.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HomeLogin,
+  },
+};
 </script>
 
 <style>
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("./img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
