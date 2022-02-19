@@ -1,9 +1,9 @@
 <template>
-  <HomeLogin img="./img/logo.png" />
+  <HomeLogin />
 </template>
 
 <script>
-import HomeLogin from "./components/HomeLogin.vue";
+import HomeLogin from "@/components/HomeLogin.vue";
 
 export default {
   name: "App",
@@ -37,5 +37,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 }
 </style>
